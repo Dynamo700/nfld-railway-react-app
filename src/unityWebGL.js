@@ -5,8 +5,8 @@ const UnityWebGL = () => {
     // Ensure the path is correct based on where you've placed the build files
     const loaderUrl = 'unityBuild/Build/UnityLoader.js';
     const config = {
-      dataUrl: 'unityBuild/Build/build.data',
-      frameworkUrl: 'unityBuild/Build/framework.js',
+      dataUrl: 'public/Build/',
+      frameworkUrl: 'Test_Template_Project\\Builds\\WebGL_build_V8\\Build', // Corrected slashes
       codeUrl: 'unityBuild/Build/build.wasm',
       streamingAssetsUrl: 'StreamingAssets',
       companyName: 'YourCompanyName',
