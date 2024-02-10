@@ -7,7 +7,7 @@ function App() {
     <div className="App" style={{ backgroundColor: 'teal'}}>
       {/* Add your text here in a container */}
       <div style={{textAlign: 'center', margin: '20px 0', backgroundColor: 'lightgrey'}}>
-        <h1>Welcome to The Newfoundland railway website!</h1>
+        <h1>Welcome to The Newfoundland railway educational app!</h1>
         <h2>Here you can learn about the locomotives that were used on the Newfoundland railway.</h2>
         </div>
         <UnityWebGL />
