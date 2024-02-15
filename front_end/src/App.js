@@ -11,8 +11,8 @@ function App() {
         <h2>Here you can learn about the locomotives that were used on the Newfoundland railway.</h2>
         </div>
         <UnityWebGL 
-        width="800"
-        height="600"
+        width="900"
+        height="800"
         />
           {/* Unity WebGL application */}
         <br></br>
