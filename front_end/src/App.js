@@ -13,9 +13,23 @@ function App() {
         <UnityWebGL 
         width="900"
         height="800"
+
         />
+        <div style={{display: 'flex', alignItems: 'left', textAlign: 'flex', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+          In this simulation you will see two locomotives.
+          <br></br>
+           The first locomotive is NF210 number 925. This was one of many NF210s to arrive on the island in the 1950's. You can still find
+          this particular locomotive on the island today in Avondale. With the locomotive is mail car number 1806 and coach number 568.
+          <br></br>
+          <br></br>
+          The second locomotive you see is a number 593. A 4-6-2 steam locomotive built by Baldwin Locomotive Works in 1920 and was retired in 1958. After being retired it was 
+          put on display in Corner Brook It can be found at the Railway Society of Newfoundland in Corner Brook where it is attached to a boxcar, a baggage car, a coach 
+          and a caboose. It is the only remaining steam locomotive on the whole of the island. With this steam locomotive are two tanker cars that can be found at the Port
+          Aux Basques railway mueseum.
+        </div>
           {/* Unity WebGL application */}
         <br></br>
+        
 
         <div style={{display: 'flex', alignItems: 'left', textAlign: 'flex', margin: '20px 0', backgroundColor: 'lightgrey'}}>
           
@@ -31,13 +45,13 @@ function App() {
           </div>
         
         <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'lightgrey'}}>
-        
+        <div style={{textAlign: 'left'}}>
         <h1>History</h1>
         <br></br>
         <p>The Newfoundland railway began construction in 1881 and it was completed in 1898. In order to cut down on costs at that time, the railway was built on 
           narrow gauge track which had a smaller width than the track on the mainland. The line stretched from St. John's to Port Aux Basques. When Newfoundland joined 
           Canada in 1949, the railway became a part of the Canadain National's system. CN would inherit 46 steam locomotives along with three center cab diesels. CN spent 
-          heavily on improvments to the system. 53 new NF210 diesels began arriving in 1952, and full dieselization was achieved by 1957. Projects to improve the tracks 
+          heavily on improvments to the system. 53 new diesels began arriving in 1952, and full dieselization was achieved by 1957. Projects to improve the tracks 
           brought schedule and service improvments and until 1954 freight traffic increased. That was also the year that the Trans Canada Highway was opened. Since then, 
           rail traffic declined. As a result, the CN Caribou otherwise known as "The Newfie Bullet" was cancelled, and it made it's last run on June 3, 1969 having been 
           replaced by buses. Mixed trains continued to operate on branchlines until 1984, when their closure left only the mixed train between Bishops Falls and Corner Brook 
@@ -47,6 +61,7 @@ function App() {
           pieces of track were auctioned off. Equipment or locomotives that could not be sold were dismantled for scrap.</p>
           <br></br>
           <br></br>
+          </div>
           <img src={`${process.env.PUBLIC_URL}/images/steam_loco_2.jpg`} 
         alt="This is Engine 317 at the St. John's railway station."
         style={{ width: '50%', height: '50%'}}>
@@ -60,30 +75,60 @@ function App() {
         <div>
         <img src={`${process.env.PUBLIC_URL}/images/steam_loco_3.jpg`} 
         alt="This is Engine 317 at the St. John's railway station."
-        style={{ width: '100%', height: '100%'}}>
+        style={{ width: '90%', height: '90%'}}>
         </img>
         <img src={`${process.env.PUBLIC_URL}/images/steam_loco_1.jpg`} 
         alt="This is Engine 317 at the St. John's railway station."
-        style={{ width: '100%', height: '100%'}}>
+        style={{ width: '90%', height: '90%'}}>
         </img>
-        <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_1.jpg`} 
+        <img src={`${process.env.PUBLIC_URL}/images/steam_loco_2.jpg`} 
         alt="This is Engine 317 at the St. John's railway station."
-        style={{ width: '100%', height: '100%'}}>
+        style={{ width: '90%', height: '90%'}}>
         </img>
         </div>
           <div style={{textAlign: 'left'}}>
-          <h1>Locomotives</h1>  
+          <h1>Steam Locomotives</h1>  
           <p>The newfoundland railway used a variety of different locomotives. The first steam locomotives they recieved were in fact from the PEI railway which was upgrading their
           tracks from narrow guage to standard guage. The newfoundland railway inherited several differnet steam locomotives from a variety of manufacturers such as Baldwin Locomotive
           Works, American Locomotive works, and even the Hawthorn Leslie and Company from the United Kingdom. In addition, some locomotives were even created in Newfoundland in the Reid-Newfoundland 
           Company Shops. Said locomotives were numbered 113 to 120 as well as 152 and 153. Oh all the steam locomotives used on the railway, only one exists. Number 593. A 4-6-2 steam locomotive built
           by Baldwin Locomotive Works in 1920 and was retired in 1958. It can be found at the Railway Society of Newfoundland in Corner Brook where it is attached to a boxcar, a baggage car,
-          a coach and a caboose. After the closure of the railway, several of the NF210s and rolling stock were sent to countries such as Chile, Nigeria and Nicaragua where some are 
-          still operating to this day. As for the GMD G8's, all but two were scrapped. Number 803 currently resides in Carbonear outside of the Carbonear railway station, and G8 
-          number 805 is at ExpoRail, a large railway mueseum in Montreal along with a few narrow gauge cars.
+          a coach and a caboose. 
         </p>
             </div>                
         </div>
+
+        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+        <div>
+        <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_1.jpg`} 
+        alt="This is G8 number 803 passing by a railway station."
+        style={{ width: '90%', height: '90%'}}>
+        </img>
+        <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_2.jpg`} 
+        alt="Four NF210s pulling a long line of boxcars."
+        style={{ width: '90%', height: '90%'}}>
+        </img>
+        <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_3.jpg`} 
+        alt="NF210 number 916 in it's orginal green and yellow livery."
+        style={{ width: '90%', height: '90%'}}>
+        </img>
+        </div>
+          <div style={{textAlign: 'left'}}>
+          <h1>Diesel Locomotives</h1>  
+          <p>When the Newfoundland railway became a part of the Canadain National, two types of diesels were sent to the railway; the NF210, and the G8. The NF210 was built by Genarel
+            Motors Diesel specifically for use on the island. They produce 1200 horsepower and they also had a exceptionally roomy cabin for a narrow guage locomotive. As a result
+          After the closure of the railway, several of the NF210s and rolling stock were sent to countries such as Chile, Nigeria and Nicaragua where some are 
+          still operating to this day. 
+          
+          G8's were based on a popular export model, they were low slung and produced 800 horsepower. They were primarily used for the branchlines 
+          on the island. Unlike the NF210s, crews said that the G8's had an extremly rough ride. All but two were scrapped when the railway closed down. 
+          Number 803 currently resides in Carbonear outside of the Carbonear railway station, and G8 number 805 is at ExpoRail, a large railway mueseum in 
+          Montreal along with a few narrow gauge cars.
+
+        </p>
+            </div>                
+        </div>
+
 
         <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', margin: '20px 0', backgroundColor: 'lightgrey'}}>
         <div>
@@ -121,8 +166,12 @@ function App() {
           Several people had tried to reopen the park, but none had been successful. To this day, the remains of the Trinity Loop are
         </p>
         </div>
-          </div>
+          </div>          
     </div>
+
+    
+
+    
   );
 }
 
