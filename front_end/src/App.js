@@ -1,49 +1,47 @@
 import React from 'react';
 import UnityWebGL from './unityWebGL'; // Adjust the path as necessary
 import Map from './Map';
+import './App.css'
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: 'teal'}}>
-      {/* Add your text here in a container */}
-      <div style={{textAlign: 'center', margin: '20px 0', backgroundColor: 'lightgrey'}}>
-        <h1>Welcome to The Newfoundland railway educational app!</h1>
-        <h2>Here you can learn about the locomotives that were used on the Newfoundland railway.</h2>
-        </div>
-        <UnityWebGL 
-        width="900"
-        height="800"
-
-        />
-         <div style={{display: 'flex', alignItems: 'left', textAlign: 'flex', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+    <div className="App" style={{ backgroundColor: '#045c1b', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ textAlign: 'center', margin: '20px 0', backgroundColor: 'black' }}>
+        <h1 className='h1_text'>Welcome to The Newfoundland railway educational app!</h1>
+        <h2 className='h2_text'>Here you can learn about the locomotives that were used on the Newfoundland railway.</h2>
+      </div>
+      {/* Flex container for Unity WebGL and Instructions */}
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'start' }}>
+        {/* Unity WebGL application */}
+        <UnityWebGL width="900" height="800" />
+        {/* Instructions */}
+        <div style={{ marginLeft: '20px', padding: '20px', backgroundColor: 'black' }}>
+          <h1 className='h1_text'>Instructions</h1>
           
-          <h1>Instructions</h1>
-          
-          <br></br>
-           To move around the map, use the joystick.
+          <p className='p_text'>To move around the map, use the joystick.
           <br></br>
           <br></br>
-           To look around, use your finger or your mouse and pan on the screen
+          To look around, use your finger or your mouse and pan on the screen.
           <br></br>
           <br></br>
-          To switch the locomotive model, press the "Switch Locomotive" button
+          To switch the locomotive model, press the "Switch Locomotive" button.
           <br></br>
           <br></br>
           To sound the horn or whistle of the locomotive, press the "Horn / Whistle" button.
           <br></br>
           <br></br>
-          To reset your position on the map, press the reset button.
-          
-        </div> 
-          {/* Unity WebGL application */}
-        <br></br>
+          To reset your position on the map, press the reset button.</p>
+        </div>
+      </div>
+
+      
         
 
-        <div style={{display: 'flex', alignItems: 'left', textAlign: 'flex', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+        <div style={{display: 'flex', alignItems: 'left', textAlign: 'flex', margin: '20px 0', backgroundColor: 'black'}}>
           
             <Map />
             
-        <p>Using the interactive map, you can discover railway Museums and displays across the island!
+        <p className='p_text'>Using the interactive map, you can discover railway Museums and displays across the island!
           <br></br>
           Several Museums exist across the island which hold not only information about the railway but also artifacts and even preserved locomotives as well. One of the most 
           popular being the Coastal railway Museum which is built inside the largest former railway station on the island. It is also home to Engine 906 which is attached to a 
@@ -52,11 +50,11 @@ function App() {
           remaining steam locomotive on the entirety of the island.</p>
           </div>
         
-        <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+        <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'black'}}>
         <div style={{textAlign: 'left'}}>
-        <h1>History</h1>
+        <h1 className='h1_text'>History</h1>
         <br></br>
-        <p>The Newfoundland railway began construction in 1881 and it was completed in 1898. In order to cut down on costs at that time, the railway was built on
+        <p className='p_text'>The Newfoundland railway began construction in 1881 and it was completed in 1898. In order to cut down on costs at that time, the railway was built on
           narrow gauge track which had a smaller width than the track on the mainland. The line stretched from St. John's to Port Aux Basques. When Newfoundland joined
           Canada in 1949, the railway became a part of the Canadian National's system. CN would inherit 46 steam locomotives along with three center cab diesels. CN spent
           heavily on improvements to the system. 53 new diesels began arriving in 1952, and full dieselization was achieved by 1957. Projects to improve the tracks
@@ -82,7 +80,7 @@ function App() {
 
           
         
-      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', margin: '20px 0', backgroundColor: 'black'}}>
         <div>
         <img src={`${process.env.PUBLIC_URL}/images/steam_loco_3.jpg`} 
         alt="This is Engine 317 at the St. John's railway station."
@@ -95,8 +93,8 @@ function App() {
         
         </div>
           <div style={{textAlign: 'left'}}>
-          <h1>Steam Locomotives</h1>  
-          <p>The Newfoundland railway used a variety of different locomotives. The first steam locomotives they received were in fact from the PEI railway which was upgrading their
+          <h1 className='h1_text'>Steam Locomotives</h1>  
+          <p className='p_text'>The Newfoundland railway used a variety of different locomotives. The first steam locomotives they received were in fact from the PEI railway which was upgrading their
             tracks from narrow gauge to standard gauge. The newfoundland railway inherited several different steam locomotives from a variety of manufacturers such as Baldwin Locomotive
             Works, American Locomotive works, and even the Hawthorn Leslie and Company from the United Kingdom. In addition, some locomotives were even created in Newfoundland in the Reid-Newfoundland
             Company Shops. Said locomotives were numbered 113 to 120 as well as 152 and 153. Oh all the steam locomotives used on the railway, only one exists. Number 593. A 4-6-2 steam locomotive built
@@ -106,11 +104,11 @@ function App() {
             </div>                
         </div>
 
-        <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+        <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'black'}}>
         
           <div style={{textAlign: 'left'}}>
-          <h1>Diesel Locomotives</h1>  
-          <p>When the Newfoundland railway became a part of the Canadian National, two types of diesels were sent to the railway; the NF210, and the G8. The NF210 was built by General
+          <h1 className='h1_text'>Diesel Locomotives</h1>  
+          <p className='p_text'>When the Newfoundland railway became a part of the Canadian National, two types of diesels were sent to the railway; the NF210, and the G8. The NF210 was built by General
             Motors Diesel specifically for use on the island. They produce 1200 horsepower and they also had an exceptionally roomy cabin for a narrow gauge locomotive. As a result
           After the closure of the railway, several of the NF210s and rolling stock were sent to countries such as Chile, Nigeria and Nicaragua.
           <br></br>
@@ -121,9 +119,9 @@ function App() {
           Montreal along with a few narrow gauge cars.
         </p>
             </div>
-        <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_1.jpg`} 
-        alt="This is G8 number 803 passing by a railway station."
-        style={{ width: '33%', height: '33%'}}>
+        <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_4.jpg`} 
+        alt="This is G8 number 805 on display in ExpoRail in Montreal."
+        style={{ width: '34%', height: '34%'}}>
         </img>
         <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_3.jpg`} 
         alt="Four NF210s pulling a long line of boxcars."
@@ -132,7 +130,7 @@ function App() {
         </div>
 
 
-        <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+        <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'black'}}>
         
         <img src={`${process.env.PUBLIC_URL}/images/trinity_loop_1.jpg`} 
         alt="This is Engine 317 at the St. John's railway station."
@@ -142,8 +140,8 @@ function App() {
         
         
         <div style={{textAlign: 'left'}}>
-            <h1>Trinity Loop</h1>
-        <p>
+            <h1 className='h1_text'>Trinity Loop</h1>
+        <p className='p_text'>
         The Trinity Loop was created as a result of a problem when attempting to bring a train to the town of Trinity. The town was located along the coast and is surrounded by steep
           hills which would have made the trip by train impossible. The solution was a two kilometer extension that would loop around a nearby pond and gradually lower the railway
           tracks to an acceptable elevation. To do this, the Reid Company hired engineer J.P Powell to design what would later become known as "The Trinity Loop"
@@ -169,9 +167,10 @@ function App() {
         </div>
           </div>
 
-          <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'lightgrey'}}>
+          <div style={{display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'black'}}>
             <div style={{textAlign: 'left'}}>
-            <h1>Present day</h1>
+            <h1 className='h1_text'>Present day</h1>
+            <p className='p_text'>
             As of today, several museums are available and static displays of locomotives of the Newfoundland railway exist. There is still interest in the Newfoundland railway both from
             railway enthusiasts and those who have worked on the railway. At the Avondale railway museum which also has one of the last stretches of track to exist on the island, they use
             the train that originally ran on the Trinity Loop to give passengers a ride on the stretch of track. Even after all of this time, you can still go for a trip on the railway in a sense.
@@ -181,10 +180,11 @@ function App() {
             that used to run on the railway, Interest in the railway is by no means dead.
             Some of the NF210 locomotives that ran on the railway still serve overseas on certain railroads. For example, FCAB in Chile still uses several NF210's in their roster, albeit
             with several modifications such as standard gauge trucks, increased engine power and extra windows added to the rear for increased visibility. 
+            </p>
             </div>
             <img src={`${process.env.PUBLIC_URL}/images/avondale_train_2.jpg`} 
         alt="This is the Avondale Express."
-        style={{ width: '30%', height: '30%'}}>
+        style={{ width: '28%', height: '28%'}}>
         </img>
         <img src={`${process.env.PUBLIC_URL}/images/NF210_FCAB.png`} 
         alt="This is the Avondale Express."
@@ -193,9 +193,6 @@ function App() {
           </div>
                       
     </div>
-
-    
-
     
   );
 }

@@ -1,3 +1,16 @@
+.h1_text {
+  color: white;
+}
+
+.h2_text {
+  color: white;
+}
+
+.p_text {
+  color: white;
+  font-size: 23px;
+}
+
 .App {
   text-align: center;
 }
@@ -13,9 +26,7 @@
   color: white;
 }
 
-body {
-  background-color: blue;
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -25,3 +36,4 @@ body {
     transform: rotate(360deg);
   }
 }
+
