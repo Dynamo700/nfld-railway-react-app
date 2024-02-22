@@ -15,6 +15,15 @@
   text-align: center;
 }
 
+.navbar .navbar_link {
+  color: white;
+}
+
+.navbar_main {
+  color: #000;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

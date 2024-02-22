@@ -2,10 +2,12 @@ import React from 'react';
 import UnityWebGL from './unityWebGL'; // Adjust the path as necessary
 import Map from './Map';
 import './App.css'
+import MyNavbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App" style={{ backgroundColor: '#045c1b', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <MyNavbar />   
       <div style={{ textAlign: 'center', margin: '20px 0', backgroundColor: 'black' }}>
         <h1 className='h1_text'>Welcome to The Newfoundland railway educational app!</h1>
         <h2 className='h2_text'>Here you can learn about the locomotives that were used on the Newfoundland railway.</h2>
