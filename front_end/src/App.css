@@ -19,10 +19,17 @@
   color: white;
 }
 
+.navbar .navbar_link:visited {
+  color: white;
+}
+
 .navbar_main {
   color: #000;
 }
 
+body {
+  background-color: #045c1b;
+}
 
 .App-header {
   background-color: #282c34;
@@ -45,4 +52,5 @@
     transform: rotate(360deg);
   }
 }
+
 
