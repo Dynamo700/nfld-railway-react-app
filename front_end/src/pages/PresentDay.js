@@ -6,7 +6,7 @@ function PresentDay() {
     return (
         <div>
             <MyNavbar />
-        <div style={{ display: 'flex', justifyContent: 'flex-start', textAlign: 'left', margin: '20px 0', backgroundColor: 'black' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', textAlign: 'left', margin: '20px 0', backgroundColor: 'black' }}>
             <div style={{textAlign: 'left'}}>
             <h1 className='h1_text'>Present day</h1>
             <p className='p_text'>
@@ -20,9 +20,6 @@ function PresentDay() {
             on certain railroads. For example, FCAB in Chile still uses several NF210's in their roster, albeit
             with several modifications such as standard gauge trucks, increased engine power and extra windows added to the rear for increased visibility. 
             </p>
-
-            </div>
-            
             <img src={`${process.env.PUBLIC_URL}/images/avondale_train_2.jpg`} 
         alt="This is the Avondale Express. A small train that orgianally ran on the Trinity Loop"
         style={{ width: '28%', height: '28%'}}>
@@ -31,6 +28,10 @@ function PresentDay() {
         alt="An NF210 in the year 2022, sporting FCAB livery in Chile."
         style={{ width: '40%', height: '40%'}}>
         </img>
+
+            </div>
+        
+            
           </div>
 
           </div>

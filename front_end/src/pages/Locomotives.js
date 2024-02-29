@@ -10,7 +10,7 @@ function Locomotives() {
                 
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'flex-start', textAlign: 'left', margin: '20px 0', backgroundColor: 'black' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', textAlign: 'left', margin: '20px 0', backgroundColor: 'black' }}>
                 <div style={{ textAlign: 'left', flex: 1 }}>
                     <h1 className='h1_text'>Diesel Locomotives</h1>
                     <p className='p_text'>
@@ -23,9 +23,10 @@ function Locomotives() {
                         Number 803 currently resides in Carbonear outside of the Carbonear railway station, and G8 number 805 is at ExpoRail, a large railway museum in
                         Montreal along with a few narrow gauge cars.
                     </p>
-                </div>
-                <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_4.jpg`} alt="This is G8 number 805 on display in ExpoRail in Montreal." style={{ width: '34%', height: '34%', marginRight: '10px' }} />
+                    <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_4.jpg`} alt="This is G8 number 805 on display in ExpoRail in Montreal." style={{ width: '34%', height: '34%', marginRight: '10px' }} />
                 <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_3.jpg`} alt="An NF210 in it's orginal green and yellow paintjob." style={{ width: '36%', height: '36%' }} />
+                </div>
+                
             </div>
             <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start', margin: '20px 0', backgroundColor: 'black'}}>
                 <div>

@@ -6,7 +6,7 @@ function TrinityLoop() {
     return (
         <div>
         <MyNavbar />
-        <div style={{className: 'App', display: 'flex', alignItems: 'right', textAlign: 'left', margin: '20px 0', backgroundColor: 'black'}}>
+        <div style={{className: 'App', display: 'flex', alignItems: 'flex-start', textAlign: 'left', margin: '20px 0', backgroundColor: 'black'}}>
                 <div style={{textAlign: 'left'}}>     
                     <h1 className='h1_text'>Trinity Loop</h1>
                     <br></br>
@@ -33,10 +33,11 @@ function TrinityLoop() {
           Several people had tried to reopen the park, but none had been successful. To this day, the remains of the Trinity Loop are still present, however nothing has been done
           with the park.
                     </p>
-                    
+                    <img src={`${process.env.PUBLIC_URL}/images/trinity_loop_1.jpg`} alt="the Trinity Loop in the 70's." style={{ width: '35%', height: '35%' }} />
+                    <img src={`${process.env.PUBLIC_URL}/images/trinity_loop_2.jpg`} alt="The Trinity Loop today." style={{ width: '40%', height: '40%' }} />
                 </div>
                 
-            <img src={`${process.env.PUBLIC_URL}/images/trinity_loop_1.jpg`} alt="This is Engine 317 at the St. John's railway station." style={{ width: '35%', height: '35%' }} />
+            
             </div>
 
             </div>                     
