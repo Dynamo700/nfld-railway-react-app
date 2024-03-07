@@ -3,7 +3,7 @@ function Map() {
       <iframe 
         src={`${process.env.PUBLIC_URL}/map/index.html`} 
         title="Map view"
-        width="350%"
+        width="400%"
         height="650"
       ></iframe>
     )
