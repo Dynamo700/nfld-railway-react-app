@@ -23,8 +23,8 @@ function Locomotives() {
                         Number 803 currently resides in Carbonear outside of the Carbonear railway station, and G8 number 805 is at ExpoRail, a large railway museum in
                         Montreal along with a few narrow gauge cars.
                     </p>
-                    <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_4.jpg`} alt="This is G8 number 805 on display in ExpoRail in Montreal." style={{ width: '34%', height: '34%', marginRight: '10px' }} />
-                <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_3.jpg`} alt="An NF210 in it's orginal green and yellow paintjob." style={{ width: '36%', height: '36%' }} />
+                    <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_4.jpg`} alt="This is G8 number 805 on display in ExpoRail in Montreal." style={{ width: '34%', height: '34%', marginRight: '10px' }} className="img-zoom" />
+                    <img src={`${process.env.PUBLIC_URL}/images/diesel_loco_3.jpg`} alt="An NF210 in it's original green and yellow paint." style={{ width: '36%', height: '36%' }} className="img-zoom" />
                 </div>
                 
             </div>
@@ -33,19 +33,25 @@ function Locomotives() {
                 <h1 className='h1_text'>Steam Locomotives</h1>  
           <p className='p_text'>The Newfoundland railway used a variety of different locomotives. The first steam locomotives they received were in fact from the PEI railway which was upgrading their
             tracks from narrow gauge to standard gauge. The newfoundland railway inherited several different steam locomotives from a variety of manufacturers such as Baldwin Locomotive
-            Works, American Locomotive works, and even the Hawthorn Leslie and Company from the United Kingdom. In addition, some locomotives were even created in Newfoundland in the Reid-Newfoundland
-            Company Shops. Said locomotives were numbered 113 to 120 as well as 152 and 153. Of all the steam locomotives used on the railway, only one exists. Number 593. A 4-6-2 steam locomotive built
+            Works, American Locomotive works, and even the Hawthorn Leslie and Company from the United Kingdom.
+            <br></br>
+            <br></br> 
+            In addition, some locomotives were even created in Newfoundland in the Reid-Newfoundland
+            Company Shops. Said locomotives were numbered 113 to 120 as well as 152 and 153. Of all the steam locomotives used on the railway, only one survived. Number 593. A 4-6-2 steam locomotive built
             by Baldwin Locomotive Works in 1920 and was retired in 1958. It can be found at the Railway Society of Newfoundland in Corner Brook where it is attached to a boxcar, a baggage car,
             a coach and a caboose.
         </p>
                     <img src={`${process.env.PUBLIC_URL}/images/steam_loco_3.jpg`} 
-                        alt="This is Engine 317 at the St. John's railway station."
+                        alt="This is a black and white photo of a steam locomotive at the St. John's harbour."
                         style={{ width: '40%', height: '40%'}}
+                        className="img-zoom"
                     />
                     <img src={`${process.env.PUBLIC_URL}/images/engine_593_1.jpg`} 
-                        alt="This is Engine 317 at the St. John's railway station."
+                        alt="This is Engine 317 on display in Corner Brook."
                         style={{ width: '40%', height: '40%'}}
+                        className="img-zoom"
                     />
+                    
                 </div>
                 </div>
         </div>

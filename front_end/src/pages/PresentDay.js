@@ -22,12 +22,15 @@ function PresentDay() {
             </p>
             <img src={`${process.env.PUBLIC_URL}/images/avondale_train_2.jpg`} 
         alt="This is the Avondale Express. A small train that orgianally ran on the Trinity Loop"
-        style={{ width: '28%', height: '28%'}}>
+        style={{ width: '28%', height: '28%'}} 
+        className="img-zoom">
         </img>
         <img src={`${process.env.PUBLIC_URL}/images/NF210_FCAB.png`} 
         alt="An NF210 in the year 2022, sporting FCAB livery in Chile."
-        style={{ width: '40%', height: '40%'}}>
+        style={{ width: '40%', height: '40%'}}
+        className="img-zoom">
         </img>
+        
 
             </div>
         

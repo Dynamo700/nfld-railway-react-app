@@ -42,15 +42,10 @@ body {
   color: white;
 }
 
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-zoom {
+  transition: transform 0.5s ease;
 }
 
-
+.img-zoom:hover {
+  transform: scale(1.1); /* Adjust scale value as needed */
+}
